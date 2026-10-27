@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KVANTOY — илим, технология, тарых жана кызыктуу фактылар дүйнөсү.">
+  <title>KVANTOY — Чексиз ой. Жаңы ачылыш.</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #07111f;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 22px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #1d3048;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #42d9ff;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+
+    .hero {
+      min-height: 440px;
+      padding: 90px 7%;
+      text-align: center;
+      background: radial-gradient(circle at top, #153c61, #07111f 70%);
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 8vw, 64px);
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #42d9ff;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 30px;
+      color: #c1d0e0;
+      font-size: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 25px;
+      background: #42d9ff;
+      color: #07111f;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 55px 7%;
+    }
+
+    h2 {
+      margin-bottom: 25px;
+      font-size: 28px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #101f32;
+      padding: 25px;
+      border: 1px solid #233951;
+      border-radius: 14px;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card .emoji {
+      font-size: 35px;
+    }
+
+    .card h3 {
+      margin: 12px 0;
+      color: #42d9ff;
+    }
+
+    .card p {
+      color: #bdcada;
+      font-size: 15px;
+    }
+
+    .about {
+      margin-top: 55px;
+      padding: 30px;
+      background: #101f32;
+      border-radius: 14px;
+    }
+
+    .about p {
+      color: #bdcada;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 15px;
+      border-top: 1px solid #1d3048;
+      color: #9aadc2;
+    }
+
+    footer a {
+      color: #42d9ff;
+      text-decoration: none;
+    }
+
+    @media (max-width: 480px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 6px;
+      }
+
+      .hero {
+        padding: 70px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">KVANTOY</div>
+    <nav>
+      <a href="#home">Башкы бет</a>
+      <a href="#topics">Темалар</a>
+      <a href="#about">Биз жөнүндө</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Чексиз ой.<br><span>Жаңы ачылыш.</span></h1>
+    <p>
+      Илимдин сырларын ач. Технологиянын келечегин тааны.
+      Тарыхтан сабак ал. Дүйнөгө башкача көз караш менен кара.
+    </p>
+    <a class="button" href="#topics">Ачылыштарды башта</a>
+  </section>
+
+  <main>
+    <section id="topics">
+      <h2>Изилдөө дүйнөсү</h2>
+
+      <div class="cards">
+        <article class="card">
+          <div class="emoji">🔬</div>
+          <h3>Илим</h3>
+          <p>Ааламдын сырлары, жаратылыштын мыйзамдары жана илимий ачылыштар.</p>
+        </article>
+
+        <article class="card">
+          <div class="emoji">🤖</div>
+          <h3>Технология</h3>
+          <p>Жасалма интеллект, роботтор жана келечектин жаңы мүмкүнчүлүктөрү.</p>
+        </article>
+
+        <article class="card">
+          <div class="emoji">🏛️</div>
+          <h3>Тарых</h3>
+          <p>Өткөн доорлор, улуу цивилизациялар жана унутулган окуялар.</p>
+        </article>
+
+        <article class="card">
+          <div class="emoji">🌍</div>
+          <h3>Кызыктуу фактылар</h3>
+          <p>Күнүмдүк жашоодо байкалбаган таң калыштуу маалыматтар.</p>
+        </article>
+
+        <article class="card">
+          <div class="emoji">💡</div>
+          <h3>Дүйнө тааным</h3>
+          <p>Ой жүгүртүүнү кеңейткен идеялар, суроолор жана жаңы көз караштар.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2>KVANTOY деген эмне?</h2>
+      <p>
+        KVANTOY — билимге кызыккандар үчүн маалыматтык платформа.
+        Биз илимди, технологияны, тарыхты жана кызыктуу фактыларды
+        кыргыз тилинде жеткиликтүү кылууга умтулабыз.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 KVANTOY. Бардык укуктар корголгон.</p>
+    <p>Чексиз ой. Жаңы ачылыш.</p>
+    <p><a href="https://t.me/kvantoy">Telegram каналыбыз</a></p>
+  </footer>
+
+</body>
+  </html>
+  
